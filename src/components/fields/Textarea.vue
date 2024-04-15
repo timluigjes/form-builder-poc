@@ -3,10 +3,12 @@ import {ref} from 'vue';
 import Label from './Label.vue';
 import {useLabel} from "@/mixins/label.js";
 
-const props = defineProps(['name'])
+const props = defineProps(['label', 'name'])
 let name = props.name;
 
-const {label, updateLabel} = useLabel()
+const {updateLabel} = useLabel();
+
+
 </script>
 
 <template>
