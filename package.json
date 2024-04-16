@@ -1,8 +1,12 @@
 {
   "name": "vuixkit",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
+  "author": {
+    "name": "Tim Luigjes",
+    "url": "https://luigjes.dev"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
