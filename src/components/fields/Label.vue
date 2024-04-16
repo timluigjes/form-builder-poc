@@ -1,11 +1,15 @@
 <script setup>
+import {useFormStore} from "@/store/form.js";
+
 const props = defineProps(['name', 'label']);
 const emit = defineEmits('updateLabelValue')
 let name = props.name;
 let label = props.label;
+const formStore = useFormStore();
 
 function updateLabel(e) {
   e.preventDefault();
+  formStore.updateLabel(name, e.target.innerText);
   emit('updateLabelValue', e.target.innerText);
 
 }

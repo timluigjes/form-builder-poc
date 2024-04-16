@@ -5,7 +5,6 @@ export function useLabel() {
     // defineEmits('updateLabel')
     function updateLabel(val) {
         label.value = val;
-
     }
 
     return {label, updateLabel};
