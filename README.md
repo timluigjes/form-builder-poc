@@ -1,4 +1,4 @@
-# vuixkit
+# Vue 3 Form Builder Proof of Concept
 
 Form builder in Vue 3
 
